@@ -1,12 +1,12 @@
 {
   "version": 2,
   "functions": {
-    "public_html/**/*.php": {
+    "api/**/*.php": {
       "runtime": "vercel-php@0.7.4"
     }
   },
   "routes": [
     { "src": "/assets/(.*)", "dest": "/public_html/assets/$1" },
-    { "src": "/(.*)", "dest": "/public_html/$1" }
+    { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
